@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Ted Cahall Resume</title>
 <meta content="Ted Cahall is a Digital Transformation Executive" name="description" />
 <meta content="Ted Cahall, Theodore Cahall, Theodore R. Cahall, Microsoft, Bank of America, AT&T, AT&T Bell Labs, AOL, Digital River" name="keywords" />
+<meta charset='UTF-8'/>
+<meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -12,7 +16,15 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-html, body { height:100%; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+   height:100%;
+   background-color: #EEEEEE;    /* Light gray */
+}
 body {
    font-family: verdana, helvetica, arial;
 }
@@ -53,11 +65,11 @@ ul {
    margin: 0px;
    border: 0px;
 }
-#email {
+.email {
    font-size: 18px;
    font-weight:bold;
 }
-#res-name {
+.res-name {
    font-size: 34px;
    font-weight:bold;
 }
@@ -92,6 +104,24 @@ ul {
     padding-top: 5px;
     position: relative;
 }
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+#  body {
+#    background-color: #F09A9D; /* Red */
+#  }
+  .email {
+     font-size: 12px;
+     font-weight:normal;
+  }
+  h1 {
+     font-size: 24px;
+#     font-weight:normal;
+     padding: 0px;
+     margin: 0px;
+     border: 0px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -102,7 +132,7 @@ ul {
 <div id="resume-header">
 <img class="img-responsive" src="ted-cahall.jpeg" width="150" align="left" style="margin-right:10px; margin-left:14px;" alt="Ted Cahall"/>
 <h1><a href="http://cahall-labs.com/about-ted-cahall/">Ted Cahall</a></h1>
-<div id="email">cahall@cahall.com - Chanhassen, MN</div>
+<div class="email">cahall@cahall.com - Chanhassen, MN</div>
 E-Commerce, Payments, Digital Transformation Executive
 </div> <!-- end of resume-header -->
 <div id="resume-experience">
